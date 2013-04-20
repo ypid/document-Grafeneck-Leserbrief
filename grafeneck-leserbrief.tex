@@ -1,0 +1,32 @@
+%% <scrlttr2/Brief.tex> Vorlageversion 1.2 <Robin Schneider>
+%%%Präambel
+%\listfiles	%% listfiles in die Logdatei
+\RequirePackage{RequirePackageRS}
+\documentclass[12pt,ngerman,personal_settings,address_Hermann]{scrlttr2}
+\setkomavar{date}{\printdate{1997-04-15}}
+% Ostersonntag: 30. März
+\hypersetup{pdftitle={Grafeneck -- Leserbrief},
+	pdfsubject={Schreibaufgabe im Stil der Abschlussklausur},
+	pdfkeywords={Grafeneck -- Leserbrief | Klasse 12 | \AUTHOR},
+}
+
+%% Spetzifische angaben
+\Anschrift{Redaktion -- Alb Bote}{}{dh}{Musterstraße}{23}{72763}{Reutlingen}
+
+\begin{document}
+%\setkomavar{subject}{}
+\pagenumbering{arabic}
+\begin{letter}{\EmName\\ \EmAddress}
+\Osehrgeehrte{\EmSex}{\EmVorname}
+
+\input{files/chapters/content}
+
+\closing{Hochachtungsvoll}\renewcaptionname{ngerman}{\enclname}{Anlage}
+%\encl{handschriftlicher Brief}
+%\cc{Frau  \\ name2}
+\ps{PS: Der Autor dieses hypothetischen Briefes ist \AuName.}
+\vfill
+\printlicense
+\printendsignature
+\end{letter}
+\end{document}
