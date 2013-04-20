@@ -1,16 +1,20 @@
-%% <scrlttr2/Brief.tex> Vorlageversion 1.2 <Robin Schneider>
-%%%Präambel
-%\listfiles	%% listfiles in die Logdatei
+%% <letter/letter.tex> template 1.2 by Robin `ypid` Schneider <ypid23@aol.de>
+%% The current version can be found on: https://github.com/ypid/typesetting/blob/master/templates/letter/letter.tex
+%%% preamble
+%\listfiles %% listfiles to logfile
 \RequirePackage{RequirePackageRS}
 \documentclass[12pt,ngerman,personal_settings,address_Hermann]{scrlttr2}
-\setkomavar{date}{\printdate{1997-04-15}}
-% Ostersonntag: 30. März
+
+%% specific indications
+\setkomavar{date}{\printdate{1997-04-15}} %% Ostersonntag: 30. März
+
 \hypersetup{pdftitle={Grafeneck -- Leserbrief},
 	pdfsubject={Schreibaufgabe im Stil der Abschlussklausur},
 	pdfkeywords={Grafeneck -- Leserbrief | Klasse 12 | \AUTHOR},
 }
+\SetURL{http://ypid.files.wordpress.com/2013/04/grafeneck-leserbrief.pdf}
+\SetGitURL{https://github.com/ypid/document-Grafeneck-Leserbrief}
 
-%% Spetzifische angaben
 \Anschrift{Redaktion -- Alb Bote}{}{dh}{Musterstraße}{23}{72763}{Reutlingen}
 
 \begin{document}
@@ -24,9 +28,9 @@
 \closing{Hochachtungsvoll}\renewcaptionname{ngerman}{\enclname}{Anlage}
 %\encl{handschriftlicher Brief}
 %\cc{Frau  \\ name2}
-\ps{PS: Der Autor dieses hypothetischen Briefes ist \AuName.}
+\ps{PS: Der Autor dieses hypothetischen Briefes ist \AUTHOR.}
 \vfill
+\printURLlong
 \printlicense
-\printendsignature
 \end{letter}
 \end{document}
